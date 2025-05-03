@@ -20,7 +20,7 @@ const Index = () => {
           entry.target.classList.add('animate-slide-up');
         }
       });
-    }, { threshold: 0.05, rootMargin: '-30px' });
+    }, { threshold: 0.05, rootMargin: '-20px' });
 
     document.querySelectorAll('section').forEach((section) => {
       if (section) {
@@ -43,9 +43,9 @@ const Index = () => {
       <Navbar />
       <Hero />
       <HowItWorks />
-      <Testimonials />
       <Features />
       <Pricing />
+      <Testimonials />
       <FAQ />
       <CTASection />
       <Footer />
