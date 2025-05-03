@@ -5,35 +5,35 @@
 
 @layer base {
   :root {
-    --background: 260 20% 98%;
-    --foreground: 260 25% 15%;
+    --background: 33 45% 96%;
+    --foreground: 25 25% 10%;
 
     --card: 0 0% 100%;
-    --card-foreground: 260 25% 15%;
+    --card-foreground: 25 25% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 260 25% 15%;
+    --popover-foreground: 25 25% 10%;
 
-    --primary: 262 83% 58%;
-    --primary-foreground: 0 0% 98%;
+    --primary: 24 40% 43%;
+    --primary-foreground: 30 40% 98%;
 
-    --secondary: 260 25% 96%;
-    --secondary-foreground: 260 25% 15%;
+    --secondary: 25 25% 95%;
+    --secondary-foreground: 25 30% 20%;
 
-    --muted: 260 15% 90%;
-    --muted-foreground: 260 10% 45%;
+    --muted: 25 10% 90%;
+    --muted-foreground: 25 15% 35%;
 
-    --accent: 262 83% 96%;
-    --accent-foreground: 262 83% 40%;
+    --accent: 30 30% 88%;
+    --accent-foreground: 24 40% 28%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 260 15% 90%;
-    --input: 260 15% 90%;
-    --ring: 262 83% 58%;
+    --border: 25 15% 85%;
+    --input: 25 15% 85%;
+    --ring: 24 40% 43%;
 
-    --radius: 1rem;
+    --radius: 0.5rem;
   }
 }
 
@@ -58,7 +58,7 @@
   }
   
   .section-padding {
-    @apply py-20 px-4 md:px-8 lg:px-12;
+    @apply py-16 px-4 md:px-8 lg:px-12;
   }
   
   .btn-primary {
@@ -70,7 +70,7 @@
   }
   
   .card-shadow {
-    @apply shadow-[0_2px_10px_rgba(0,0,0,0.08)];
+    @apply shadow-[0_2px_10px_rgba(0,0,0,0.05)];
   }
   
   .feature-card {

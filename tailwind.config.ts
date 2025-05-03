@@ -53,11 +53,25 @@ export default {
 					DEFAULT: "hsl(var(--card))",
 					foreground: "hsl(var(--card-foreground))"
 				},
-				highlight: "#8B5CF6"
+				sand: {
+					DEFAULT: "#E6DACA",
+					50: "#F9F5F0",
+					100: "#F0E9E0",
+					200: "#E6DACA",
+					300: "#D8C9B2",
+					400: "#C5B091",
+					500: "#B3956B",
+				},
+				earth: {
+					DEFAULT: "#8B6E4E",
+					light: "#A8917A",
+					dark: "#634B30",
+					darker: "#422F1D"
+				}
 			},
 			fontFamily: {
-				sans: ['Inter', 'system-ui', 'sans-serif'],
-				display: ['Inter', 'system-ui', 'sans-serif']
+				sans: ['Outfit', 'system-ui', 'sans-serif'],
+				display: ['Playfair Display', 'serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
@@ -88,13 +102,18 @@ export default {
 				slideInFromRight: {
 					'0%': { transform: 'translateX(100%)' },
 					'100%': { transform: 'translateX(0)' }
+				},
+				slideUp: {
+					'0%': { transform: 'translateY(20px)', opacity: '0' },
+					'100%': { transform: 'translateY(0)', opacity: '1' }
 				}
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fadeIn 0.5s ease-out forwards',
-				'slide-in-right': 'slideInFromRight 0.5s ease-out forwards'
+				'slide-in-right': 'slideInFromRight 0.5s ease-out forwards',
+				'slide-up': 'slideUp 0.6s ease-out forwards'
 			},
 			boxShadow: {
 				'soft': '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)',

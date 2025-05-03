@@ -25,12 +25,12 @@ export const FloatingCTA = () => {
   
   return (
     <div className={`fixed bottom-8 right-8 z-40 flex items-center space-x-4 transition-all duration-300 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-16 pointer-events-none'}`}>
-      <Button asChild className="bg-primary hover:bg-primary/90 shadow-lg shadow-primary/20">
+      <Button asChild className="bg-earth hover:bg-earth-dark shadow-lg shadow-earth/20">
         <a href="#get-started">Launch Now</a>
       </Button>
       <button 
         onClick={scrollToTop}
-        className="bg-accent hover:bg-accent/80 text-primary p-3 rounded-full transition-colors shadow-lg"
+        className="bg-sand-200 hover:bg-sand-300 text-earth-dark p-3 rounded-full transition-colors shadow-lg"
         aria-label="Scroll to top"
       >
         <ArrowUp size={20} />

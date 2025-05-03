@@ -4,7 +4,6 @@ import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { HowItWorks } from "@/components/HowItWorks";
 import { Testimonials } from "@/components/Testimonials";
-import { BeforeAfter } from "@/components/BeforeAfter";
 import { Features } from "@/components/Features";
 import { Pricing } from "@/components/Pricing";
 import { FAQ } from "@/components/FAQ";
@@ -18,10 +17,10 @@ const Index = () => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          entry.target.classList.add('animate-fade-in');
+          entry.target.classList.add('animate-slide-up');
         }
       });
-    }, { threshold: 0.1 });
+    }, { threshold: 0.1, rootMargin: '-50px' });
 
     document.querySelectorAll('section').forEach((section) => {
       if (section) {
@@ -45,7 +44,6 @@ const Index = () => {
       <Hero />
       <HowItWorks />
       <Testimonials />
-      <BeforeAfter />
       <Features />
       <Pricing />
       <FAQ />
