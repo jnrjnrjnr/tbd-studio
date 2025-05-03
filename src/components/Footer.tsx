@@ -6,7 +6,7 @@ export const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-10">
           <div>
             <h3 className="text-xl font-bold mb-4">TBD Studio</h3>
-            <p className="text-muted-foreground mb-4">Modern websites for small businesses, delivered in 24 hours.</p>
+            <p className="text-muted-foreground mb-4">Modern websites for businesses, delivered in 24 hours.</p>
           </div>
           
           <div>

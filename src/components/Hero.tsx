@@ -9,7 +9,7 @@ export const Hero = () => {
         <div className="max-w-3xl mx-auto">
           <div className="mb-6">
             <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-medium mb-2 leading-tight relative z-10">
-              A stunning website <br /><span className="italic">for your business</span> in just one day.
+              A refreshed website <br /><span className="italic">for your business</span> in just one day.
             </h1>
             <p className="text-sm md:text-base text-sand-100/90 mb-4 max-w-2xl">
               Fast, beautiful, affordable websites for businesses that deserve better. 
@@ -22,7 +22,7 @@ export const Hero = () => {
                   <ArrowRight className="ml-1 h-3 w-3" />
                 </a>
               </Button>
-              <Button variant="outline" asChild size="sm" className="h-9 text-sm border-sand-200 text-sand-100 hover:bg-earth-light">
+              <Button variant="outline" asChild size="sm" className="h-9 text-sm border-sand-200 text-sand-100 hover:bg-earth-light hover:border-transparent hover:text-sand-50">
                 <a href="#pricing">View Pricing</a>
               </Button>
             </div>

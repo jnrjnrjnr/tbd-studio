@@ -9,15 +9,21 @@ type PlanProps = {
   description: string;
   features: string[];
   isPopular?: boolean;
+  isAddon?: boolean;
   buttonText: string;
 };
 
-const Plan = ({ title, price, description, features, isPopular = false, buttonText }: PlanProps) => {
+const Plan = ({ title, price, description, features, isPopular = false, isAddon = false, buttonText }: PlanProps) => {
   return (
-    <Card className={`p-4 relative card-shadow border-0 ${isPopular ? 'shadow-xl bg-accent/40' : 'bg-white'}`}>
+    <Card className={`p-4 relative card-shadow border-0 ${isPopular ? 'shadow-xl bg-accent/40' : isAddon ? 'bg-sand-300/40 border-l-4 border-earth-dark' : 'bg-white'}`}>
       {isPopular && (
         <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-earth-dark text-sand-50 px-3 py-0.5 rounded-full text-xs font-medium shadow-sm">
           Most Popular
+        </div>
+      )}
+      {isAddon && (
+        <div className="absolute -top-3 left-1/2 transform -translate-x-1/2 bg-earth-light text-sand-50 px-3 py-0.5 rounded-full text-xs font-medium shadow-sm">
+          Add-On
         </div>
       )}
       <h3 className="text-xl font-display font-medium mb-1.5 text-earth-darker">{title}</h3>
@@ -94,6 +100,7 @@ export const Pricing = () => {
               "Hosting/domain support",
               "Priority support (48h turnaround)"
             ]}
+            isAddon
             buttonText="Add Care Plan"
           />
         </div>

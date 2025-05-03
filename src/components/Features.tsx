@@ -6,11 +6,12 @@ type FeatureProps = {
   icon: React.ReactNode;
   title: string;
   description: string;
+  colorClass: string;
 };
 
-const Feature = ({ icon, title, description }: FeatureProps) => {
+const Feature = ({ icon, title, description, colorClass }: FeatureProps) => {
   return (
-    <Card className="p-4 transition-all hover:-translate-y-1 duration-300 ease-in-out border-0 bg-white shadow hover:shadow-md">
+    <Card className={`p-4 transition-all hover:-translate-y-1 duration-300 ease-in-out border-0 ${colorClass} shadow hover:shadow-md`}>
       <div className="bg-earth-dark/10 w-10 h-10 flex items-center justify-center rounded-sm mb-3">
         <div className="text-earth-dark">{icon}</div>
       </div>
@@ -25,32 +26,38 @@ export const Features = () => {
     {
       icon: <Clock size={20} />,
       title: "24-hour turnaround",
-      description: "Get your professional website delivered within 24 hours, guaranteed."
+      description: "Get your professional website delivered within 24 hours, guaranteed.",
+      colorClass: "bg-sand-50"
     },
     {
       icon: <Smartphone size={20} />,
       title: "Mobile-friendly design",
-      description: "Your site automatically adapts to look perfect on any device."
+      description: "Your site automatically adapts to look perfect on any device.",
+      colorClass: "bg-sand-100"
     },
     {
       icon: <Search size={20} />,
       title: "SEO-ready",
-      description: "Built with search engines in mind so customers can find you easily."
+      description: "Built with search engines in mind so customers can find you easily.",
+      colorClass: "bg-sand-50"
     },
     {
       icon: <Globe size={20} />,
       title: "Hosting support",
-      description: "We'll help you secure your domain and provide reliable hosting solutions."
+      description: "We'll help you secure your domain and provide reliable hosting solutions.",
+      colorClass: "bg-sand-100"
     },
     {
       icon: <Monitor size={20} />,
       title: "Responsive layout",
-      description: "Beautiful layouts that work perfectly across all screen sizes."
+      description: "Beautiful layouts that work perfectly across all screen sizes.",
+      colorClass: "bg-sand-50"
     },
     {
       icon: <Wand size={20} />,
       title: "Conversion-friendly",
-      description: "Strategically designed to turn visitors into paying customers."
+      description: "Strategically designed to turn visitors into paying customers.",
+      colorClass: "bg-sand-100"
     }
   ];
 
