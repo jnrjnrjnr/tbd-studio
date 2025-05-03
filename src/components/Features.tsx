@@ -10,12 +10,12 @@ type FeatureProps = {
 
 const Feature = ({ icon, title, description }: FeatureProps) => {
   return (
-    <Card className="p-6 transition-all hover:-translate-y-2 duration-300 ease-in-out border-0 bg-gradient-to-br from-white to-accent/20 shadow-lg hover:shadow-xl">
-      <div className="bg-primary/10 w-14 h-14 flex items-center justify-center rounded-xl mb-6">
-        <div className="text-primary">{icon}</div>
+    <Card className="p-4 transition-all hover:-translate-y-1 duration-300 ease-in-out border-0 bg-white shadow hover:shadow-md">
+      <div className="bg-earth-dark/10 w-10 h-10 flex items-center justify-center rounded-sm mb-3">
+        <div className="text-earth-dark">{icon}</div>
       </div>
-      <h3 className="text-xl font-bold mb-3">{title}</h3>
-      <p className="text-muted-foreground">{description}</p>
+      <h3 className="text-base font-display font-medium mb-1">{title}</h3>
+      <p className="text-xs text-earth-dark/80">{description}</p>
     </Card>
   );
 };
@@ -23,48 +23,48 @@ const Feature = ({ icon, title, description }: FeatureProps) => {
 export const Features = () => {
   const features = [
     {
-      icon: <Clock size={28} />,
-      title: "Free 24-hour turnaround",
+      icon: <Clock size={20} />,
+      title: "24-hour turnaround",
       description: "Get your professional website delivered within 24 hours, guaranteed."
     },
     {
-      icon: <Smartphone size={28} />,
-      title: "Mobile-friendly & responsive",
+      icon: <Smartphone size={20} />,
+      title: "Mobile-friendly design",
       description: "Your site automatically adapts to look perfect on any device."
     },
     {
-      icon: <Search size={28} />,
+      icon: <Search size={20} />,
       title: "SEO-ready",
       description: "Built with search engines in mind so customers can find you easily."
     },
     {
-      icon: <Globe size={28} />,
-      title: "Hosting & domain support",
+      icon: <Globe size={20} />,
+      title: "Hosting support",
       description: "We'll help you secure your domain and provide reliable hosting solutions."
     },
     {
-      icon: <Monitor size={28} />,
-      title: "Responsive design",
+      icon: <Monitor size={20} />,
+      title: "Responsive layout",
       description: "Beautiful layouts that work perfectly across all screen sizes."
     },
     {
-      icon: <Wand size={28} />,
-      title: "Clean, conversion-friendly design",
+      icon: <Wand size={20} />,
+      title: "Conversion-friendly",
       description: "Strategically designed to turn visitors into paying customers."
     }
   ];
 
   return (
-    <section id="features" className="section-padding bg-gradient-to-b from-accent/30 to-background">
+    <section id="features" className="py-6 bg-white">
       <div className="container-custom">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-purple-700 bg-clip-text text-transparent">Key Features</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
+        <div className="text-center mb-5">
+          <h2 className="text-xl md:text-2xl font-display font-medium mb-1 text-earth-darker">Key Features</h2>
+          <p className="text-sm text-earth-dark/80 max-w-2xl mx-auto">
             Everything you need to succeed online
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
           {features.map((feature, index) => (
             <Feature key={index} {...feature} />
           ))}

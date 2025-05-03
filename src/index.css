@@ -33,7 +33,7 @@
     --input: 25 15% 85%;
     --ring: 24 40% 43%;
 
-    --radius: 0.5rem;
+    --radius: 0.25rem;
   }
 }
 
@@ -54,34 +54,34 @@
 
 @layer components {
   .container-custom {
-    @apply max-w-7xl mx-auto px-4 md:px-5;
+    @apply max-w-7xl mx-auto px-3 md:px-4;
   }
   
   .section-padding {
-    @apply py-12 px-4 md:px-6;
+    @apply py-6 px-3 md:px-4;
   }
   
   .btn-primary {
-    @apply bg-primary text-white font-medium py-2 px-5 rounded-lg shadow-sm transition-all hover:opacity-90 active:scale-[0.98];
+    @apply bg-earth-dark text-sand-50 font-medium py-1.5 px-3 rounded shadow-sm transition-all hover:opacity-90 active:scale-[0.98];
   }
   
   .btn-secondary {
-    @apply bg-secondary text-primary font-medium py-2 px-5 rounded-lg shadow-sm transition-all hover:bg-secondary/80 hover:shadow-sm active:scale-[0.98];
+    @apply bg-sand-50 text-earth-dark font-medium py-1.5 px-3 rounded shadow-sm transition-all hover:bg-sand-100 hover:shadow-sm active:scale-[0.98];
   }
   
   .card-shadow {
-    @apply shadow-[0_2px_8px_rgba(0,0,0,0.05)];
+    @apply shadow-[0_1px_4px_rgba(0,0,0,0.05)];
   }
   
   .feature-card {
-    @apply bg-white border border-border rounded-lg p-5 card-shadow;
+    @apply bg-white border border-border rounded p-3 card-shadow;
   }
 }
 
 /* Animation for scroll reveal */
 @keyframes slideUp {
   from {
-    transform: translateY(15px);
+    transform: translateY(10px);
     opacity: 0;
   }
   to {
@@ -91,5 +91,5 @@
 }
 
 .animate-slide-up {
-  animation: slideUp 0.4s ease-out forwards;
+  animation: slideUp 0.3s ease-out forwards;
 }

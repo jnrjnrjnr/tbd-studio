@@ -20,7 +20,7 @@ const Index = () => {
           entry.target.classList.add('animate-slide-up');
         }
       });
-    }, { threshold: 0.05, rootMargin: '-20px' });
+    }, { threshold: 0.05, rootMargin: '-10px' });
 
     document.querySelectorAll('section').forEach((section) => {
       if (section) {

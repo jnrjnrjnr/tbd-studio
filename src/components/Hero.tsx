@@ -4,26 +4,25 @@ import { ArrowRight } from "lucide-react";
 
 export const Hero = () => {
   return (
-    <section className="pt-20 pb-8 md:pt-28 md:pb-12 bg-sand-50">
+    <section className="pt-14 pb-6 md:pt-16 md:pb-8 bg-earth-dark text-sand-50">
       <div className="container-custom">
         <div className="max-w-3xl mx-auto">
-          <div className="relative mb-8">
-            <span className="absolute -top-5 -left-1 text-4xl md:text-7xl text-sand-400 opacity-60 font-display italic">24h</span>
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-display font-medium mb-3 leading-tight relative z-10 text-earth-darker">
-              A stunning website <br /><span className="italic">for your business</span> in just 24 hours.
+          <div className="mb-6">
+            <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-display font-medium mb-2 leading-tight relative z-10">
+              A stunning website <br /><span className="italic">for your business</span> in just one day.
             </h1>
-            <p className="text-base md:text-lg text-earth-dark/80 mb-6 max-w-2xl">
+            <p className="text-sm md:text-base text-sand-100/90 mb-4 max-w-2xl">
               Fast, beautiful, affordable websites for businesses that deserve better. 
               Just $399 one-time payment for a complete, conversion-focused design.
             </p>
-            <div className="flex flex-col sm:flex-row gap-3 mt-6">
-              <Button asChild size="lg" className="h-11 text-base bg-earth hover:bg-earth-dark shadow-md">
+            <div className="flex flex-row gap-3 mt-4">
+              <Button asChild size="sm" className="h-9 text-sm bg-sand-100 hover:bg-sand-50 text-earth-dark shadow-md">
                 <a href="#get-started">
                   Get Started
-                  <ArrowRight className="ml-2 h-4 w-4" />
+                  <ArrowRight className="ml-1 h-3 w-3" />
                 </a>
               </Button>
-              <Button variant="outline" asChild size="lg" className="h-11 text-base border-earth text-earth-dark hover:bg-sand-200/50">
+              <Button variant="outline" asChild size="sm" className="h-9 text-sm border-sand-200 text-sand-100 hover:bg-earth-light">
                 <a href="#pricing">View Pricing</a>
               </Button>
             </div>
