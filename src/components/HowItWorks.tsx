@@ -12,14 +12,14 @@ const Step = ({ number, title, description, isLast = false }: StepProps) => {
   return (
     <div className="flex">
       <div className="flex flex-col items-center mr-6">
-        <div className="flex items-center justify-center w-12 h-12 rounded-full bg-highlight text-white font-bold text-lg">
+        <div className="flex items-center justify-center w-12 h-12 rounded-full bg-primary text-white font-bold text-lg">
           {number}
         </div>
         {!isLast && <div className="w-0.5 bg-muted grow mt-4"></div>}
       </div>
       <div className={cn("pb-12", isLast && "pb-0")}>
         <h3 className="text-xl font-bold mb-2">{title}</h3>
-        <p className="text-gray-300">{description}</p>
+        <p className="text-muted-foreground">{description}</p>
       </div>
     </div>
   );
@@ -27,11 +27,11 @@ const Step = ({ number, title, description, isLast = false }: StepProps) => {
 
 export const HowItWorks = () => {
   return (
-    <section id="how-it-works" className="section-padding bg-charcoal">
+    <section id="how-it-works" className="section-padding bg-secondary/30">
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">How It Works</h2>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Our streamlined process gets your business online in just 24 hours
           </p>
         </div>

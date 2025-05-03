@@ -14,11 +14,11 @@ export const BeforeAfter = () => {
   ];
 
   return (
-    <section className="section-padding bg-blue-gray">
+    <section className="section-padding bg-secondary/30">
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Before & After</h2>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             See the dramatic difference a modern website makes
           </p>
         </div>
@@ -29,19 +29,19 @@ export const BeforeAfter = () => {
               <h3 className="text-2xl font-bold text-center">{example.title}</h3>
               <div className="space-y-4">
                 <div className="relative">
-                  <div className="absolute top-4 left-4 bg-charcoal/90 px-4 py-2 rounded-md font-medium">Before</div>
+                  <div className="absolute top-4 left-4 bg-background/90 px-4 py-2 rounded-md font-medium shadow-sm">Before</div>
                   <img 
                     src={example.before} 
                     alt={`${example.title} before`} 
-                    className="w-full h-64 object-cover rounded-xl border border-border/50 opacity-70" 
+                    className="w-full h-64 object-cover rounded-xl border border-border opacity-70 card-shadow" 
                   />
                 </div>
                 <div className="relative">
-                  <div className="absolute top-4 left-4 bg-highlight/90 px-4 py-2 rounded-md font-medium">After</div>
+                  <div className="absolute top-4 left-4 bg-highlight/90 px-4 py-2 rounded-md font-medium text-white shadow-sm">After</div>
                   <img 
                     src={example.after} 
                     alt={`${example.title} after`} 
-                    className="w-full h-64 object-cover rounded-xl border border-highlight/50 shadow-lg" 
+                    className="w-full h-64 object-cover rounded-xl border border-border shadow-lg" 
                   />
                 </div>
               </div>

@@ -14,30 +14,30 @@ type PlanProps = {
 
 const Plan = ({ title, price, description, features, isPopular = false, buttonText }: PlanProps) => {
   return (
-    <Card className={`glass-card p-8 relative ${isPopular ? 'border-highlight border-2' : ''}`}>
+    <Card className={`p-8 relative card-shadow ${isPopular ? 'border-highlight border-2' : ''}`}>
       {isPopular && (
-        <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-highlight text-white px-4 py-1 rounded-full text-sm font-medium">
+        <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-highlight text-white px-4 py-1 rounded-full text-sm font-medium shadow-sm">
           Most Popular
         </div>
       )}
       <h3 className="text-2xl font-bold mb-2">{title}</h3>
       <div className="mb-6">
         <span className="text-3xl font-bold">{price}</span>
-        {price !== "$79" && <span className="text-gray-300 ml-2">one-time</span>}
-        {price === "$79" && <span className="text-gray-300 ml-2">/month</span>}
+        {price !== "$79" && <span className="text-muted-foreground ml-2">one-time</span>}
+        {price === "$79" && <span className="text-muted-foreground ml-2">/month</span>}
       </div>
-      <p className="text-gray-300 mb-6">{description}</p>
+      <p className="text-muted-foreground mb-6">{description}</p>
       <ul className="space-y-3 mb-8">
         {features.map((feature, index) => (
           <li key={index} className="flex items-start">
             <span className="text-highlight mr-3 mt-1">
               <Check size={16} />
             </span>
-            <span className="text-gray-300">{feature}</span>
+            <span className="text-muted-foreground">{feature}</span>
           </li>
         ))}
       </ul>
-      <Button asChild className={`w-full ${isPopular ? 'btn-primary' : 'btn-secondary'}`}>
+      <Button asChild variant={isPopular ? "default" : "outline"} className="w-full">
         <a href="#get-started">{buttonText}</a>
       </Button>
     </Card>
@@ -46,11 +46,11 @@ const Plan = ({ title, price, description, features, isPopular = false, buttonTe
 
 export const Pricing = () => {
   return (
-    <section id="pricing" className="section-padding bg-blue-gray">
+    <section id="pricing" className="section-padding">
       <div className="container-custom">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Simple, Transparent Pricing</h2>
-          <p className="text-xl text-gray-300 max-w-2xl mx-auto">
+          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Choose the perfect plan for your business needs
           </p>
         </div>
