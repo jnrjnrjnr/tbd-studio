@@ -13,7 +13,7 @@ export const Hero = () => {
             </h1>
             <p className="text-sm md:text-base text-sand-100/90 mb-4 max-w-2xl">
               Fast, beautiful, affordable websites for businesses that deserve better. 
-              Just $399 one-time payment for a complete, conversion-focused design.
+              Just $499 one-time payment for a complete, conversion-focused design.
             </p>
             <div className="flex flex-row gap-3 mt-4">
               <Button asChild size="sm" className="h-9 text-sm bg-sand-100 hover:bg-sand-50 text-earth-dark shadow-md">
@@ -21,9 +21,6 @@ export const Hero = () => {
                   Get Started
                   <ArrowRight className="ml-1 h-3 w-3" />
                 </a>
-              </Button>
-              <Button asChild size="sm" className="h-9 text-sm bg-sand-100 hover:bg-sand-50 text-earth-dark shadow-md">
-                <a href="#pricing">View Pricing</a>
               </Button>
             </div>
           </div>
