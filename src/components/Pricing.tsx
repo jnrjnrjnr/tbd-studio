@@ -14,15 +14,15 @@ type PlanProps = {
 
 const Plan = ({ title, price, description, features, isPopular = false, buttonText }: PlanProps) => {
   return (
-    <Card className={`p-8 relative card-shadow ${isPopular ? 'border-highlight border-2' : ''}`}>
+    <Card className={`p-8 relative card-shadow border-0 ${isPopular ? 'shadow-xl bg-gradient-to-br from-white to-accent' : 'bg-white'}`}>
       {isPopular && (
-        <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-highlight text-white px-4 py-1 rounded-full text-sm font-medium shadow-sm">
+        <div className="absolute -top-4 left-1/2 transform -translate-x-1/2 bg-primary text-white px-4 py-1 rounded-full text-sm font-medium shadow-lg">
           Most Popular
         </div>
       )}
       <h3 className="text-2xl font-bold mb-2">{title}</h3>
       <div className="mb-6">
-        <span className="text-3xl font-bold">{price}</span>
+        <span className="text-3xl font-bold bg-gradient-to-r from-primary to-purple-700 bg-clip-text text-transparent">{price}</span>
         {price !== "$79" && <span className="text-muted-foreground ml-2">one-time</span>}
         {price === "$79" && <span className="text-muted-foreground ml-2">/month</span>}
       </div>
@@ -30,14 +30,14 @@ const Plan = ({ title, price, description, features, isPopular = false, buttonTe
       <ul className="space-y-3 mb-8">
         {features.map((feature, index) => (
           <li key={index} className="flex items-start">
-            <span className="text-highlight mr-3 mt-1">
+            <span className="text-primary mr-3 mt-1">
               <Check size={16} />
             </span>
             <span className="text-muted-foreground">{feature}</span>
           </li>
         ))}
       </ul>
-      <Button asChild variant={isPopular ? "default" : "outline"} className="w-full">
+      <Button asChild variant={isPopular ? "default" : "outline"} className={isPopular ? "w-full bg-primary hover:bg-primary/90 shadow-lg shadow-primary/20" : "w-full border-primary/20 hover:bg-primary/5"}>
         <a href="#get-started">{buttonText}</a>
       </Button>
     </Card>
@@ -46,10 +46,10 @@ const Plan = ({ title, price, description, features, isPopular = false, buttonTe
 
 export const Pricing = () => {
   return (
-    <section id="pricing" className="section-padding">
+    <section id="pricing" className="section-padding bg-white">
       <div className="container-custom">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Simple, Transparent Pricing</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-purple-700 bg-clip-text text-transparent">Simple, Transparent Pricing</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Choose the perfect plan for your business needs
           </p>

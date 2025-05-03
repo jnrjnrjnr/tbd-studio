@@ -53,7 +53,7 @@ export default {
 					DEFAULT: "hsl(var(--card))",
 					foreground: "hsl(var(--card-foreground))"
 				},
-				highlight: "#3E63DD"
+				highlight: "#8B5CF6"
 			},
 			fontFamily: {
 				sans: ['Inter', 'system-ui', 'sans-serif'],

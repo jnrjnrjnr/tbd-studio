@@ -1,4 +1,5 @@
 
+import { useEffect } from "react";
 import { Navbar } from "@/components/Navbar";
 import { Hero } from "@/components/Hero";
 import { HowItWorks } from "@/components/HowItWorks";
@@ -12,6 +13,32 @@ import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
 
 const Index = () => {
+  useEffect(() => {
+    // Add scroll animation
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('animate-fade-in');
+        }
+      });
+    }, { threshold: 0.1 });
+
+    document.querySelectorAll('section').forEach((section) => {
+      if (section) {
+        observer.observe(section);
+        section.classList.add('opacity-0'); // Start with opacity 0
+      }
+    });
+
+    return () => {
+      document.querySelectorAll('section').forEach((section) => {
+        if (section) {
+          observer.unobserve(section);
+        }
+      });
+    };
+  }, []);
+
   return (
     <div className="min-h-screen bg-background text-foreground">
       <Navbar />

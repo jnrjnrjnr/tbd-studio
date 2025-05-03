@@ -14,10 +14,10 @@ export const BeforeAfter = () => {
   ];
 
   return (
-    <section className="section-padding bg-secondary/30">
+    <section className="section-padding bg-white">
       <div className="container-custom">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Before & After</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-purple-700 bg-clip-text text-transparent">Before & After</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             See the dramatic difference a modern website makes
           </p>
@@ -27,8 +27,8 @@ export const BeforeAfter = () => {
           {examples.map((example, index) => (
             <div key={index} className="flex flex-col space-y-8">
               <h3 className="text-2xl font-bold text-center">{example.title}</h3>
-              <div className="space-y-4">
-                <div className="relative">
+              <div className="space-y-8">
+                <div className="relative group">
                   <div className="absolute top-4 left-4 bg-background/90 px-4 py-2 rounded-md font-medium shadow-sm">Before</div>
                   <img 
                     src={example.before} 
@@ -36,12 +36,12 @@ export const BeforeAfter = () => {
                     className="w-full h-64 object-cover rounded-xl border border-border opacity-70 card-shadow" 
                   />
                 </div>
-                <div className="relative">
-                  <div className="absolute top-4 left-4 bg-highlight/90 px-4 py-2 rounded-md font-medium text-white shadow-sm">After</div>
+                <div className="relative group translate-x-4 md:translate-x-8">
+                  <div className="absolute top-4 left-4 bg-primary text-white px-4 py-2 rounded-md font-medium shadow-sm">After</div>
                   <img 
                     src={example.after} 
                     alt={`${example.title} after`} 
-                    className="w-full h-64 object-cover rounded-xl border border-border shadow-lg" 
+                    className="w-full h-64 object-cover rounded-xl border-0 shadow-xl" 
                   />
                 </div>
               </div>

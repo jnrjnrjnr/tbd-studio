@@ -10,8 +10,8 @@ type FeatureProps = {
 
 const Feature = ({ icon, title, description }: FeatureProps) => {
   return (
-    <Card className="feature-card transition-all hover:translate-y-[-5px]">
-      <div className="bg-accent w-14 h-14 flex items-center justify-center rounded-xl mb-6">
+    <Card className="p-6 transition-all hover:-translate-y-2 duration-300 ease-in-out border-0 bg-gradient-to-br from-white to-accent/20 shadow-lg hover:shadow-xl">
+      <div className="bg-primary/10 w-14 h-14 flex items-center justify-center rounded-xl mb-6">
         <div className="text-primary">{icon}</div>
       </div>
       <h3 className="text-xl font-bold mb-3">{title}</h3>
@@ -55,10 +55,10 @@ export const Features = () => {
   ];
 
   return (
-    <section id="features" className="section-padding">
+    <section id="features" className="section-padding bg-gradient-to-b from-accent/30 to-background">
       <div className="container-custom">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Key Features</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-purple-700 bg-clip-text text-transparent">Key Features</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Everything you need to succeed online
           </p>

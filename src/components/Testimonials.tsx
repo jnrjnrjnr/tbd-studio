@@ -12,14 +12,14 @@ type TestimonialProps = {
 
 const Testimonial = ({ quote, name, role, avatarSrc, initials }: TestimonialProps) => {
   return (
-    <Card className="p-6 h-full flex flex-col card-shadow">
+    <Card className="p-8 h-full flex flex-col card-shadow hover:shadow-xl transition-shadow border-0 bg-gradient-to-br from-white to-accent/30">
       <div className="mb-6 flex-grow">
-        <p className="italic text-muted-foreground">&ldquo;{quote}&rdquo;</p>
+        <p className="italic text-foreground/80">&ldquo;{quote}&rdquo;</p>
       </div>
       <div className="flex items-center">
-        <Avatar className="h-10 w-10 mr-3 border border-border">
+        <Avatar className="h-12 w-12 mr-3 border border-primary/20 shadow-sm">
           <AvatarImage src={avatarSrc} />
-          <AvatarFallback className="bg-secondary">{initials}</AvatarFallback>
+          <AvatarFallback className="bg-primary/10 text-primary font-semibold">{initials}</AvatarFallback>
         </Avatar>
         <div>
           <p className="font-medium">{name}</p>
@@ -53,7 +53,7 @@ export const Testimonials = () => {
   ];
 
   return (
-    <section className="section-padding bg-white -mt-1">
+    <section className="section-padding bg-accent/30 -mt-1">
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {testimonials.map((testimonial, index) => (

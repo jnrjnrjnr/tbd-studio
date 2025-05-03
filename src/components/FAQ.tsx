@@ -31,10 +31,10 @@ export const FAQ = () => {
   ];
 
   return (
-    <section id="faq" className="section-padding bg-secondary/30">
+    <section id="faq" className="section-padding bg-accent/30">
       <div className="container-custom">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Frequently Asked Questions</h2>
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-purple-700 bg-clip-text text-transparent">Frequently Asked Questions</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Everything you need to know about our services
           </p>
@@ -43,7 +43,7 @@ export const FAQ = () => {
         <div className="max-w-3xl mx-auto">
           <Accordion type="single" collapsible className="space-y-4">
             {faqs.map((faq, index) => (
-              <AccordionItem key={index} value={`item-${index}`} className="bg-background rounded-lg shadow-sm border">
+              <AccordionItem key={index} value={`item-${index}`} className="bg-white rounded-xl shadow-md border-0">
                 <AccordionTrigger className="px-6 py-4 text-lg font-medium hover:no-underline">
                   {faq.question}
                 </AccordionTrigger>
