@@ -13,14 +13,14 @@ import { FloatingCTA } from "@/components/FloatingCTA";
 
 const Index = () => {
   useEffect(() => {
-    // Add scroll animation
+    // Add scroll animation with faster transitions
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add('animate-slide-up');
         }
       });
-    }, { threshold: 0.1, rootMargin: '-50px' });
+    }, { threshold: 0.05, rootMargin: '-30px' });
 
     document.querySelectorAll('section').forEach((section) => {
       if (section) {
