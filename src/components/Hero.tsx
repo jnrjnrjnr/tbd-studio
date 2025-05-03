@@ -22,7 +22,7 @@ export const Hero = () => {
                   <ArrowRight className="ml-1 h-3 w-3" />
                 </a>
               </Button>
-              <Button variant="outline" asChild size="sm" className="h-9 text-sm border-sand-200 text-sand-100 hover:bg-earth-light hover:border-transparent hover:text-sand-50">
+              <Button variant="outline" asChild size="sm" className="h-9 text-sm border-sand-200 text-sand-50 hover:bg-earth-light hover:border-transparent hover:text-sand-50">
                 <a href="#pricing">View Pricing</a>
               </Button>
             </div>
