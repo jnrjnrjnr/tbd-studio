@@ -1,5 +1,5 @@
-
 import { cn } from "@/lib/utils";
+import { MoveRight } from "lucide-react";
 
 type StepProps = {
   number: number;
@@ -32,22 +32,33 @@ export const HowItWorks = () => {
         <div className="text-center mb-5">
           <h2 className="text-xl md:text-2xl font-display font-medium mb-1 text-earth-darker">How It Works</h2>
           <p className="text-sm text-earth-dark/80 max-w-xl mx-auto">
-            Get online in two simple steps
+            From concept to live website in 24 hours
           </p>
         </div>
         
         <div className="max-w-lg mx-auto bg-white p-4 rounded border border-sand-200">
           <Step 
             number={1} 
-            title="Share your vision" 
-            description="Send us your existing site or business details. Tell us about your brand, goals, and preferences."
+            title="Project Brief" 
+            description="Fill out our quick questionnaire about your business, goals, and design preferences. It takes just 10 minutes."
           />
           <Step 
             number={2} 
-            title="Get your new site in 24 hours" 
-            description="We'll deliver your beautiful, mobile-friendly, SEO-optimized website within a day. No waiting, no hassle."
+            title="Development" 
+            description="Our team builds your fully functional site with all pages, forms, and features based on your brief."
+          />
+          <Step 
+            number={3} 
+            title="Launch" 
+            description="We deliver your completed site within 24 hours of your initial request, ready to go live immediately."
             isLast
           />
+        </div>
+        
+        <div className="text-center mt-4">
+          <a href="#get-started" className="inline-flex items-center text-earth-dark hover:text-earth-darker text-sm font-medium">
+            Ready to start? <MoveRight size={14} className="ml-1" />
+          </a>
         </div>
       </div>
     </section>

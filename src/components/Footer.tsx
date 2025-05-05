@@ -1,11 +1,10 @@
-
 export const Footer = () => {
   return (
     <footer className="bg-secondary/30 py-14 border-t border-border">
       <div className="container-custom">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           <div>
-            <h3 className="text-xl font-bold mb-4">TBD Studio</h3>
+            <h3 className="text-xl font-bold mb-4">The Vedra</h3>
             <p className="text-muted-foreground mb-4">Fast, beautiful, affordable websites for businesses that deserve better.</p>
           </div>
           
@@ -29,7 +28,7 @@ export const Footer = () => {
         </div>
         
         <div className="border-t border-border mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
-          <p className="text-muted-foreground">© {new Date().getFullYear()} TBD Studio. All rights reserved.</p>
+          <p className="text-muted-foreground">© {new Date().getFullYear()} The Vedra. All rights reserved.</p>
         </div>
       </div>
     </footer>

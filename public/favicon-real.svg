@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512" height="512" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg">
+  <!-- Circular border -->
+  <circle cx="256" cy="256" r="240" fill="white" stroke="black" stroke-width="32"/>
+  
+  <!-- Mountain silhouette -->
+  <path d="M128 256 L184 150 L220 180 L256 120 L300 180 L384 256 Z" fill="black"/>
+  
+  <!-- Water waves -->
+  <path d="M128 330 C170 310, 210 350, 256 330 C300 310, 340 350, 384 330" fill="none" stroke="black" stroke-width="16"/>
+  <path d="M128 370 C170 350, 210 390, 256 370 C300 350, 340 390, 384 370" fill="none" stroke="black" stroke-width="16"/>
+  <path d="M128 410 C170 390, 210 430, 256 410 C300 390, 340 430, 384 410" fill="none" stroke="black" stroke-width="16"/>
+</svg> 
