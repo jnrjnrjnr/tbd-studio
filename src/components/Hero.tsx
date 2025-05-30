@@ -12,7 +12,7 @@ export const Hero = () => {
             </h1>
             <p className="text-sm md:text-base text-sand-100/90 mb-4 max-w-2xl">
               Fast, beautiful, affordable websites for businesses that deserve better. 
-              Just $499 one-time payment for a complete, conversion-focused design.
+              Just $999 one-time payment for a complete, conversion-focused design.
             </p>
             <div className="flex flex-row gap-3 mt-6">
               <Button asChild size="sm" className="h-10 px-5 text-sm bg-sand-100 hover:bg-sand-50 text-earth-dark font-medium shadow-lg border border-sand-50/20 hover:scale-105 transition-all duration-200 relative overflow-hidden group">

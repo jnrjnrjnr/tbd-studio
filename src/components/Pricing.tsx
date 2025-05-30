@@ -29,8 +29,8 @@ const Plan = ({ title, price, description, features, isPopular = false, isAddon 
         <h3 className="text-xl font-display font-medium mb-1.5 text-earth-darker">{title}</h3>
         <div className="mb-3">
           <span className="text-2xl font-bold text-earth-dark">{price}</span>
-          {price !== "$99" && <span className="text-earth-dark/70 ml-1 text-sm">one-time</span>}
-          {price === "$99" && <span className="text-earth-dark/70 ml-1 text-sm">/month</span>}
+          {price !== "$399" && <span className="text-earth-dark/70 ml-1 text-sm">one-time</span>}
+          {price === "$399" && <span className="text-earth-dark/70 ml-1 text-sm">/month</span>}
         </div>
         <p className="text-xs text-earth-dark/80 mb-3">{description}</p>
       </div>
@@ -65,7 +65,7 @@ export const Pricing = () => {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           <Plan 
             title="Starter Plan"
-            price="$499"
+            price="$999"
             description="Perfect for small businesses just getting started online"
             features={[
               "Single-page site",
@@ -79,7 +79,7 @@ export const Pricing = () => {
           />
           <Plan 
             title="Professional Plan"
-            price="$999"
+            price="$1999"
             description="Our most popular option for established businesses"
             features={[
               "Multi-page site (Up to 5 pages)",
@@ -94,7 +94,7 @@ export const Pricing = () => {
           />
           <Plan 
             title="Care Plan"
-            price="$99"
+            price="$399"
             description="Ongoing support to keep your site fresh and performing"
             features={[
               "Monthly content updates",

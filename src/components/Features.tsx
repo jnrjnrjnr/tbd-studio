@@ -34,7 +34,7 @@ export const Features = () => {
     {
       icon: <Search size={24} />,
       title: "SEO Ready",
-      description: "Built to be found on Google with proper optimization."
+      description: "Built to be found on Google and AI models with proper optimization."
     },
     {
       icon: <Globe size={24} />,
