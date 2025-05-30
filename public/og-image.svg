@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1200" height="630" viewBox="0 0 1200 630" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background -->
+  <rect width="1200" height="630" fill="#2C3639" />
+  
+  <!-- Mountain Logo -->
+  <g transform="translate(150, 250) scale(2.5)">
+    <circle cx="100" cy="100" r="100" fill="none" stroke="white" stroke-width="10"/>
+    <path d="M50 100 L70 60 L90 85 L120 50 L150 100 Z" fill="white"/>
+    <path d="M50 130 C70 120, 90 140, 100 130 C120 120, 140 140, 150 130" fill="none" stroke="white" stroke-width="5"/>
+    <path d="M50 150 C70 140, 90 160, 100 150 C120 140, 140 160, 150 150" fill="none" stroke="white" stroke-width="5"/>
+    <path d="M50 170 C70 160, 90 180, 100 170 C120 160, 140 180, 150 170" fill="none" stroke="white" stroke-width="5"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="600" y="250" font-family="Arial, sans-serif" font-size="72" font-weight="700" fill="white" text-anchor="middle">THE VEDRA</text>
+  <text x="600" y="350" font-family="Arial, sans-serif" font-size="36" font-weight="400" fill="#E0E0E0" text-anchor="middle">Modern Websites in 24 Hours</text>
+  
+  <!-- Horizontal Line -->
+  <line x1="400" y1="400" x2="800" y2="400" stroke="#E0E0E0" stroke-width="2" />
+  
+  <!-- Tagline -->
+  <text x="600" y="450" font-family="Arial, sans-serif" font-size="24" font-weight="400" fill="#E0E0E0" text-anchor="middle">Fast, beautiful, affordable websites for businesses that deserve better.</text>
+</svg> 
