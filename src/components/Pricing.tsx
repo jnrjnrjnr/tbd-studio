@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { Check } from "lucide-react";
+import { Check, X } from "lucide-react";
 import { Card } from "@/components/ui/card";
 
 type PlanProps = {
@@ -10,9 +10,10 @@ type PlanProps = {
   isPopular?: boolean;
   isAddon?: boolean;
   buttonText: string;
+  valueMetric?: string;
 };
 
-const Plan = ({ title, price, description, features, isPopular = false, isAddon = false, buttonText }: PlanProps) => {
+const Plan = ({ title, price, description, features, isPopular = false, isAddon = false, buttonText, valueMetric }: PlanProps) => {
   return (
     <Card className={`p-4 relative card-shadow border-0 h-full flex flex-col ${isPopular ? 'shadow-xl bg-accent/40' : 'bg-white'}`}>
       {isPopular && (
@@ -33,6 +34,11 @@ const Plan = ({ title, price, description, features, isPopular = false, isAddon 
           {price === "$399" && <span className="text-earth-dark/70 ml-1 text-sm">/month</span>}
         </div>
         <p className="text-xs text-earth-dark/80 mb-3">{description}</p>
+        {valueMetric && (
+          <div className="mb-3 p-2 bg-earth-dark/5 rounded text-xs">
+            <span className="font-medium text-earth-dark">✓ {valueMetric}</span>
+          </div>
+        )}
       </div>
       <ul className="space-y-1.5 mb-4 flex-grow">
         {features.map((feature, index) => (
@@ -48,6 +54,36 @@ const Plan = ({ title, price, description, features, isPopular = false, isAddon 
         <a href="#get-started">{buttonText}</a>
       </Button>
     </Card>
+  );
+};
+
+const FeatureComparison = () => {
+  const features = [
+    { name: "Pages", starter: "1 page", professional: "Up to 5 pages" },
+    { name: "Custom Sections", starter: "3 sections", professional: "Unlimited sections" },
+    { name: "Copywriting", starter: "Basic", professional: "Professional copywriting included" },
+    { name: "Design Revisions", starter: "1 revision", professional: "Unlimited revisions" },
+    { name: "SEO Setup", starter: "Basic", professional: "Advanced SEO + AI optimization" },
+    { name: "Analytics", starter: "Basic", professional: "Advanced dashboard + reporting" },
+    { name: "Priority Support", starter: "Email", professional: "Priority phone + email" },
+    { name: "Launch Support", starter: "Basic", professional: "Full launch assistance" }
+  ];
+
+  return (
+    <div className="mt-8 bg-white rounded-lg shadow-sm border border-sand-200 overflow-hidden">
+      <div className="grid grid-cols-3 text-sm">
+        <div className="p-4 bg-sand-50 font-medium text-earth-darker">Feature</div>
+        <div className="p-4 bg-sand-50 font-medium text-earth-darker text-center">Starter</div>
+        <div className="p-4 bg-sand-50 font-medium text-earth-darker text-center">Professional</div>
+      </div>
+      {features.map((feature, index) => (
+        <div key={index} className="grid grid-cols-3 border-t border-sand-200">
+          <div className="p-4 text-xs text-earth-dark/80">{feature.name}</div>
+          <div className="p-4 text-xs text-center text-earth-dark/60">{feature.starter}</div>
+          <div className="p-4 text-xs text-center text-earth-dark/80 font-medium">{feature.professional}</div>
+        </div>
+      ))}
+    </div>
   );
 };
 
@@ -67,6 +103,7 @@ export const Pricing = () => {
             title="Starter Plan"
             price="$999"
             description="Perfect for small businesses just getting started online"
+            valueMetric="Single-page site with 3 custom sections"
             features={[
               "Single-page site",
               "Mobile-optimized design",
@@ -81,13 +118,14 @@ export const Pricing = () => {
             title="Professional Plan"
             price="$1999"
             description="Our most popular option for established businesses"
+            valueMetric="Up to 5 pages with unlimited custom sections"
             features={[
               "Multi-page site (Up to 5 pages)",
               "Everything in Starter plan",
               "Enhanced layout flexibility",
               "Custom design elements",
               "Analytics dashboard setup",
-              "Basic content creation"
+              "Professional copywriting included"
             ]}
             isPopular
             buttonText="Choose Professional"
@@ -109,6 +147,8 @@ export const Pricing = () => {
             buttonText="Add Care Plan"
           />
         </div>
+
+        <FeatureComparison />
       </div>
     </section>
   );

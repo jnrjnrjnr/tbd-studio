@@ -1,6 +1,7 @@
 import { Card } from "@/components/ui/card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
 import { Star } from "lucide-react";
+import { useGSAP } from "@/hooks/useGSAP";
 
 type TestimonialProps = {
   quote: string;
@@ -14,8 +15,10 @@ type TestimonialProps = {
 };
 
 const Testimonial = ({ quote, name, role, company, results, avatarSrc, initials, stars }: TestimonialProps) => {
+  const cardRef = useGSAP();
+  
   return (
-    <Card className="p-8 h-full flex flex-col card-shadow hover:shadow-xl transition-shadow border-0 bg-gradient-to-br from-white to-accent/30">
+    <Card ref={cardRef} className="p-8 h-full flex flex-col card-shadow hover:shadow-xl transition-shadow border-0 bg-gradient-to-br from-white to-accent/30">
       <div className="flex mb-4">
         {[...Array(5)].map((_, i) => (
           <Star key={i} size={16} className={i < stars ? "fill-yellow-500 text-yellow-500" : "text-gray-300"} />
