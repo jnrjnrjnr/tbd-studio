@@ -86,7 +86,7 @@ export const HowItWorks = () => {
         </div>
         
         <div className="text-center mt-4">
-          <a href="#get-started" className="inline-flex items-center text-earth-dark hover:text-earth-darker text-sm font-medium">
+          <a href="https://tally.so/r/3Eo66B" target="_blank" rel="noopener noreferrer" className="inline-flex items-center text-earth-dark hover:text-earth-darker text-sm font-medium">
             Ready to start? <MoveRight size={14} className="ml-1" />
           </a>
         </div>

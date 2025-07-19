@@ -51,7 +51,7 @@ const Plan = ({ title, price, description, features, isPopular = false, isAddon 
         ))}
       </ul>
       <Button asChild variant={isPopular ? "default" : "outline"} className={isPopular ? "w-full bg-earth-dark hover:bg-earth-darker text-sand-50 h-8 text-xs hover:scale-[1.02] transition-all duration-200" : "w-full border-earth-dark/20 hover:bg-earth-dark/5 text-earth-dark h-8 text-xs hover:scale-[1.02] transition-all duration-200"}>
-        <a href="#get-started">{buttonText}</a>
+        <a href="https://tally.so/r/3Eo66B" target="_blank" rel="noopener noreferrer">{buttonText}</a>
       </Button>
     </Card>
   );

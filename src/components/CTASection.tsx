@@ -12,7 +12,7 @@ export const CTASection = () => {
             Join hundreds of businesses who transformed their online presence in 24 hours.
           </p>
           <Button asChild size="sm" className="h-9 px-4 bg-sand-100 text-earth-dark hover:bg-sand-50">
-            <a href="#get-started">
+            <a href="https://tally.so/r/3Eo66B" target="_blank" rel="noopener noreferrer">
               Start My Site Today
               <ArrowRight className="ml-1 h-3 w-3" />
             </a>

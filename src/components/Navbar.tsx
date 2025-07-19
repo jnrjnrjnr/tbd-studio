@@ -36,7 +36,7 @@ export const Navbar = () => {
           <a href="#pricing" className="hover:text-earth-light transition-colors font-medium text-sm">Pricing</a>
           <a href="#faq" className="hover:text-earth-light transition-colors font-medium text-sm">FAQ</a>
           <Button asChild size="sm" className="bg-sand-100 hover:bg-sand-200 text-earth-dark font-medium ml-1 h-7 px-4 shadow-md border border-earth-dark/10 hover:scale-105 transition-all duration-200">
-            <a href="#get-started">
+            <a href="https://tally.so/r/3Eo66B" target="_blank" rel="noopener noreferrer">
               Start Now <ArrowRight className="ml-1 h-3 w-3" />
             </a>
           </Button>
@@ -61,7 +61,7 @@ export const Navbar = () => {
             <a href="#pricing" className="py-1.5 text-earth-dark/80 hover:text-earth-dark transition-colors font-medium text-sm" onClick={() => setMobileMenuOpen(false)}>Pricing</a>
             <a href="#faq" className="py-1.5 text-earth-dark/80 hover:text-earth-dark transition-colors font-medium text-sm" onClick={() => setMobileMenuOpen(false)}>FAQ</a>
             <Button asChild className="mt-2 bg-earth-dark hover:bg-earth-darker h-8 text-sm w-full shadow-md hover:scale-[1.02] transition-all duration-200 font-medium">
-              <a href="#get-started" onClick={() => setMobileMenuOpen(false)}>
+              <a href="https://tally.so/r/3Eo66B" target="_blank" rel="noopener noreferrer" onClick={() => setMobileMenuOpen(false)}>
                 Start Now <ArrowRight className="ml-1 h-3 w-3" />
               </a>
             </Button>

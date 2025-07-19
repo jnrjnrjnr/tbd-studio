@@ -16,7 +16,7 @@ export const Hero = () => {
             </p>
             <div className="flex flex-row gap-3 mt-6">
               <Button asChild size="sm" className="h-10 px-5 text-sm bg-sand-100 hover:bg-sand-50 text-earth-dark font-medium shadow-lg border border-sand-50/20 hover:scale-105 transition-all duration-200 relative overflow-hidden group">
-                <a href="#get-started" className="flex items-center">
+                <a href="https://tally.so/r/3Eo66B" target="_blank" rel="noopener noreferrer" className="flex items-center">
                   Get Started
                   <ArrowRight className="ml-1 h-4 w-4 group-hover:translate-x-1 transition-transform" />
                   <span className="absolute inset-0 bg-sand-50/20 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left"></span>
