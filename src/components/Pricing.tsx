@@ -75,12 +75,14 @@ export const Pricing = () => {
             description="Perfect for small businesses just getting started online"
             valueMetric="Single-page site with 3 custom sections"
             features={[
-              "Single-page site",
-              "Mobile-optimized design",
-              "Basic SEO setup",
-              "24-hour turnaround",
-              "Contact form implementation",
-              "Social media integration"
+              "Single-page website",
+              "Mobile-responsive design",
+              "SEO optimization & Google setup",
+              "Contact form with spam protection",
+              "Free hosting for 1 year",
+              "SSL certificate included",
+              "24-hour delivery guarantee",
+              "1 round of revisions"
             ]}
             buttonText="Choose Starter"
           />
@@ -90,12 +92,14 @@ export const Pricing = () => {
             description="Our most popular option for established businesses"
             valueMetric="Up to 5 pages with unlimited custom sections"
             features={[
-              "Multi-page site (Up to 5 pages)",
-              "Everything in Starter plan",
-              "Enhanced layout flexibility",
-              "Custom design elements",
-              "Analytics dashboard setup",
-              "Professional copywriting included"
+              "Multi-page website (up to 5 pages)",
+              "Custom design & branding",
+              "Advanced SEO with keyword research",
+              "Professional copywriting included",
+              "Analytics & conversion tracking",
+              "Priority support & faster delivery",
+              "Unlimited revisions",
+              "Free hosting for 2 years"
             ]}
             isPopular
             buttonText="Choose Professional"
@@ -105,13 +109,14 @@ export const Pricing = () => {
             price="$399"
             description="Ongoing support to keep your site fresh and performing"
             features={[
-              "Monthly content updates",
-              "Performance optimization",
-              "SEO monitoring & tuning",
-              "Google Search Console setup",
-              "Security monitoring",
-              "Hosting & domain support",
-              "48-hour support response"
+              "Monthly content updates (2x/month)",
+              "Performance optimization & speed tuning",
+              "SEO monitoring & ranking improvements",
+              "Security updates & malware protection",
+              "Google Search Console management",
+              "Hosting & domain renewal included",
+              "Priority support (4-hour response)",
+              "Monthly performance reports"
             ]}
             isAddon
             buttonText="Add Care Plan"
