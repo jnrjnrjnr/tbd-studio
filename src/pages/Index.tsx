@@ -10,8 +10,6 @@ import { FAQ } from "@/components/FAQ";
 import { CTASection } from "@/components/CTASection";
 import { Footer } from "@/components/Footer";
 import { FloatingCTA } from "@/components/FloatingCTA";
-import { TrustSignals } from "@/components/TrustSignals";
-import { AccessibilityToggle } from "@/components/AccessibilityToggle";
 
 const Index = () => {
   useEffect(() => {
@@ -46,14 +44,12 @@ const Index = () => {
       <Hero />
       <HowItWorks />
       <Features />
-      <TrustSignals />
       <Pricing />
       <Testimonials />
       <FAQ />
       <CTASection />
       <Footer />
       <FloatingCTA />
-      <AccessibilityToggle />
     </div>
   );
 };

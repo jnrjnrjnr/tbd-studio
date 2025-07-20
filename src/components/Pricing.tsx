@@ -57,36 +57,6 @@ const Plan = ({ title, price, description, features, isPopular = false, isAddon 
   );
 };
 
-const FeatureComparison = () => {
-  const features = [
-    { name: "Pages", starter: "1 page", professional: "Up to 5 pages" },
-    { name: "Custom Sections", starter: "3 sections", professional: "Unlimited sections" },
-    { name: "Copywriting", starter: "Basic", professional: "Professional copywriting included" },
-    { name: "Design Revisions", starter: "1 revision", professional: "Unlimited revisions" },
-    { name: "SEO Setup", starter: "Basic", professional: "Advanced SEO + AI optimization" },
-    { name: "Analytics", starter: "Basic", professional: "Advanced dashboard + reporting" },
-    { name: "Priority Support", starter: "Email", professional: "Priority phone + email" },
-    { name: "Launch Support", starter: "Basic", professional: "Full launch assistance" }
-  ];
-
-  return (
-    <div className="mt-8 bg-white rounded-lg shadow-sm border border-sand-200 overflow-hidden">
-      <div className="grid grid-cols-3 text-sm">
-        <div className="p-4 bg-sand-50 font-medium text-earth-darker">Feature</div>
-        <div className="p-4 bg-sand-50 font-medium text-earth-darker text-center">Starter</div>
-        <div className="p-4 bg-sand-50 font-medium text-earth-darker text-center">Professional</div>
-      </div>
-      {features.map((feature, index) => (
-        <div key={index} className="grid grid-cols-3 border-t border-sand-200">
-          <div className="p-4 text-xs text-earth-dark/80">{feature.name}</div>
-          <div className="p-4 text-xs text-center text-earth-dark/60">{feature.starter}</div>
-          <div className="p-4 text-xs text-center text-earth-dark/80 font-medium">{feature.professional}</div>
-        </div>
-      ))}
-    </div>
-  );
-};
-
 export const Pricing = () => {
   return (
     <section id="pricing" className="py-8 bg-sand-50">
@@ -147,8 +117,6 @@ export const Pricing = () => {
             buttonText="Add Care Plan"
           />
         </div>
-
-        <FeatureComparison />
       </div>
     </section>
   );
